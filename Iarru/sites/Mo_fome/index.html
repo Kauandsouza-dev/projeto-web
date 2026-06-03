@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mó Fome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="mofome">
+        <header class="topo">
+            <i class="fa-solid fa-bars bars"></i>
+            <h1>MÓ FOME</h1>
+            <i class="fa-solid fa-bell bells"></i>
+        </header>
+        <div id="tela-inicio" style="display:block;">
+            <div class="localizacao">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="txt-loc">
+                    <span>Entregar em</span>
+                    <p>Faculdade Senac DF</p>
+                </div>
+            </div>
+
+            <div class="pesquisa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar Comida, restaurante...">
+            </div>
+            <section class="banner">
+                <div class="texto">
+                    <h2>FOME BATEU?</h2>
+                    <p>A gente entrega!</p>
+                    <button>PEDIR AGORA</button>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+            </section>
+            <div class="titulo">
+                <h2>Navegue por Categorias</h2>
+            </div>
+            <section class="categorias">
+                <div class="card">
+                    🍔
+                    <p>Burguer</p>
+                </div>
+                <div class="card">
+                    🍕
+                    <p>Pizza</p>
+                </div>
+                <div class="card">
+                    🥤
+                    <p>Bebidas</p>
+                </div>
+                <div class="card">
+                    🍰
+                    <p>Doces</p>
+                </div>
+            </section>
+            <div class="titulo">
+                <h2>Destaques</h2>
+            </div>
+
+
+            <section class="destaques">
+                <div class="card-comidas">
+                    <div class="imagem-comidas">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000">
+                        <span class="tag">Mais Pedido</span>
+                    </div>
+                    <div class="info-comida">
+                        <h3>Combo Mó Fome</h3>
+                        <p>Pão brioche, smash, cheddar, bacon, batata e refri</p>
+                        <div class="preco-comida">
+                            <strong>R$ 34,90</strong>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-comidas">
+                    <div class="imagem-comidas">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000">
+                        <span class="tag">Tradicional</span>
+                    </div>
+                    <div class="info-comida">
+                        <h3>Pizza Calabresa</h3>
+                        <p>Mussarela, calabresa fatiada, e orégano</p>
+                        <div class="preco-comida">
+                            <strong>R$ 47,90</strong>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-comidas">
+                    <div class="imagem-comidas">
+                        <img
+                            src="https://thf.bing.com/th/id/OIP.rOKE61qgFHaHBUCwT8dcMQHaEJ?w=318&h=180&c=7&r=0&o=7&cb=thfc1falcon&pid=1.7&rm=3">
+                        <span class="tag">Combo Ideal</span>
+                    </div>
+                    <div class="info-comida">
+                        <h3>Milkshake de Chocolate</h3>
+                        <p>Cremoso, gelado e coberto com chantilly.</p>
+                        <div class="preco-comida">
+                            <strong>R$ 21,90</strong>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-comidas">
+                    <div class="imagem-comidas">
+                        <img
+                            src="https://thf.bing.com/th/id/OIP.KjCRXneNxsllve-lz4m8cQHaEK?w=294&h=180&c=7&r=0&o=7&cb=thfc1falcon&pid=1.7&rm=3">
+                        <span class="tag">Irresistível</span>
+                    </div>
+                    <div class="info-comida">
+                        <h3>Brownie Supremo</h3>
+                        <p>Chocolate intenso com calda e pedaços crocantes.</p>
+                        <div class="preco-comida">
+                            <strong>R$ 14,90</strong>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <div id="tela-pedidos" style="display: none;">
+            <h2 class="titulo2">Meus Pedidos</h2>
+            <div class="pedido-vazio">
+                <i class="fa-solid fa-basket-shopping "></i>
+                <p>Nenhum pedido feito ainda</p>
+            </div>
+
+
+
+        </div>
+
+        <div id="tela-perfil" style="display: none;">
+            <h2 class="titulo2">Meu Perfil</h2>
+
+            <div class="perfil-box">
+                <i class="fa-solid fa-user"></i>
+                <h2>Aluno Senac</h2>
+                <p>aluno@edu.df.senac.br</p>
+            </div>
+            <div>
+                <p class="info-options">Meus Endereços</p>
+                <p class="info-options">Formas de Pagamento</p>
+                <p class="info-options">Ajuda</p>
+                <p class="info-options">Sair</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="barra-inferior">
+
+        <div id="destaque-inicio"class="botao-menu ativo" onclick="mostrarInicio()">
+            <i class="fa-solid fa-house"></i>
+            <span>Inicio</span>
+        </div>
+
+        <div id="destaque-pedidos" class="botao-menu" onclick="mostrarPedidos()">
+            <i class="fa-solid fa-receipt"></i>
+            <span>Pedidos</span>
+        </div>
+
+        <div id="destaque-perfil" class="botao-menu" onclick="mostrarPerfil()">
+            <i class="fa-solid fa-user"></i>
+            <span>Perfil</span>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

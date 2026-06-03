@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    display: flex; 
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Iarrú{
+    width: 100%;
+    max-width: 390px; /* Limita o tamanho para parecer um aplicativo mobile mesmo no computador */
+    min-height: 100vh ;
+    background: rgb(232, 224, 233);
+}
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: blueviolet;
+    height: 60px;
+    position: relative;
+    color: aliceblue;
+}
+
+.banner{
+    background-image: url("https://img.freepik.com/fotos-gratis/ceu-do-sol-da-janela-do-aviao_117856-416.jpg?size=626&ext=jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 16px;
+    padding: 20px;
+    
+}
+
+.txt-banner{
+    margin-top: 10px;
+    width: 70%;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.txt-banner h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.txt-banner button{
+    margin-top: 8px;
+    background: #8a2be2;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.topo h1 {
+    font-size: 38px;
+}
+
+
+.bars, .bells{
+    position: absolute;
+    font-size: 24px;
+}
+.bars {
+    left: 10px;
+}
+.bells{
+    right: 10px;
+}
+.pesquisa{
+    padding: 18px;
+    align-items: center;
+    display: flex;
+    margin: 8px 16px;
+    background-color: white;
+    border-radius: 20px;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.pesquisa input{
+    border: 0px;
+    outline: 0px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.card-sites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards {
+    margin: 6px;
+    max-width: 120px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 4px;
+    display: flex;
+    
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    padding-bottom: 10px; 
+    border-radius: 20px;
+}
+
+
+.cards p{
+    font-size: 14px;
+
+}
+.cards h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    word-break: break-word;
+    
+}
+p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}   
+.img-sites {
+    background: rgb(212, 206, 206);
+    padding: 24px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 42px;
+
+
+}
+
+
+
+.descriçao-card{
+    text-align: left;
+    width: 100%;
+}
+
+.descriçao-card p {
+    width: 100%;    
+}
+
+.mofome {
+    color: rgb(247, 167, 19);
+}
+
+.latao {
+    color: rgba(0, 119, 255, 0.767);
+}
+
+.trigago {
+    color: rgba(3, 165, 3, 0.692);
+}
+
+.mofome-back {
+    background: rgba(267, 167, 0, 0.356);
+    color: rgb(247, 167, 19);
+}
+
+.latao-back {
+    background: rgba(0, 119, 255, 0.356);
+    color: rgba(0, 119, 255, 0.767);
+}
+
+.trigago-back {
+    background: rgba(3, 165, 3, 0.356);
+    color: rgba(3, 165, 3, 0.692);
+}
+
+
+
+
+.link-seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+    margin-top: auto;
+}
+
+.txt-menu{
+    margin-left: 12px;
+}
+
+.ofertas {
+    background: whitesmoke;
+    padding: 24px;
+    border-radius: 20px;
+    margin: 12px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    min-width: 320px;
+}
+
+.img-ofertas {
+    background: rgb(212, 206, 206);
+    padding: 12px;
+    border-radius: 50%;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 42px;
+    color: white;
+}
+
+.text-ofertas {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 4px;
+}
+
+.container-ofertas {
+    display: flex;
+    overflow-x: scroll;  
+    padding: 4px;
+    
+}

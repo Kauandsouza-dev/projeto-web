@@ -1,0 +1,339 @@
+/* Reset geral porque cada navegador quer ser diferente */
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; /* Faz o padding e a borda serem incluídos no cálculo da largura e altura.
+                                Sem isso os tamanhos começam a ficar maiores do que o esperado. */
+}
+
+body{
+    background-color: gray;
+    display: flex; /* Centraliza o aplicativo na tela. Sem o display:flex e justify-content ele gruda na esquerda */
+    justify-content: center;
+    padding-bottom: 20px; /* Evita que a barra inferior grude no conteúdo caso tivesse*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Principal do aplicativo */
+.mofome{
+    width: 100%;
+    max-width: 390px; /* Limita o tamanho para parecer um aplicativo mobile mesmo no computador */
+    min-height: 100vh;
+    background: rgb(224, 224, 216);
+}
+
+/* Cabeçalho do app */
+.topo{
+    display: flex;
+    height: 60px;
+    justify-content: center ;
+    align-items: center ;
+    background-color: orange;
+    position: relative; /* Posiciona os ícones do menu e sino dentro do topo */ /* Permite posicionar elementos absolutos usando esta div como referência.
+                            Sem position: relative os ícones procurariam outro elemento para se posicionar. */
+    
+}
+.topo h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Ícones do topo */
+.bars, .bells{
+    position: absolute; /* Faz os ícones ficarem presos nas laterais do cabeçalho */
+    font-size: 24px;
+}
+.bars{
+    left: 10px;
+}
+.bells{
+    right: 10px;
+}
+/* Caixa da localização */
+.localizacao{
+    background: white;
+    height: 52px;
+    padding: 12px 24px; 
+    margin: 12px 64px; 
+    border-radius: 80px;
+    
+    display: flex; /* Alinha os ícone e os textos da localização na mesma linha */
+    align-items: center; 
+
+    gap: 10px;
+    font-size: 28px; 
+}
+.txt-loc{
+    display: flex; 
+    flex-direction: column; /* Organiza "Entregar em" e o endereço um embaixo do outro. */
+}
+.txt-loc span {
+    font-size:12px;
+    color: gray;
+}
+.txt-loc p {
+    font-size: 16px;
+    font-weight:bold;
+}
+/* Barra de pesquisa */
+.pesquisa{
+    background: white;
+
+    display: flex; /* Faz o ícone da lupa e o input ficarem lado a lado */
+    align-items: center;
+
+    gap: 10px;
+    padding: 14px;
+    margin: 12px 18px;
+    border-radius: 80px;
+}
+/* Campo de pesquisa */
+.pesquisa input{
+    border: 0px;
+    outline: 0px; /* Tira a borda azul que aparece do nada */
+    width: 100%; /* Faz o campo de texto ocupar todo o espaço disponível */
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+}
+/* Banner principal */
+.banner{
+    background: rgb(238, 221, 188);
+    margin: 12px;
+    padding: 30px 20px;
+    border-radius: 30px;
+    display: flex; /* Mantém o texto e a imagem do banner lado a lado */
+}
+.texto h2{
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.texto p{
+    color: orange;
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    position: relative;
+    top: 5px;
+}
+/* Botão para incentivar gastos */
+.texto button{
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 12px 46px;
+    border-radius: 20px;
+    width: 100%;
+    position:relative;
+    top: 15px;
+}
+.banner img {
+    width: 110px;
+    margin-left: 20px;
+}
+
+.banner button {
+    cursor: pointer;
+}
+
+.titulo2{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.titulo {
+    margin-left: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+
+/* Categorias dos alimentos */
+.categorias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* faz as 4 colunas das categorias, Vendi a alma pra conseguir */
+    padding: 5px;
+    gap: 5px;
+}
+/* Cards das categorias */
+.card{
+    background-color: orange;
+    font-size: 24px;
+    padding: 12px ;
+    display: flex; /* Centraliza o emoji e o texto dentro dos cards */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Área dos destaques */
+.destaques {
+    padding: 10px 20px;
+    display: flex; 
+    overflow-x:scroll; /* faz com que os cards sejam rolados */
+    gap: 15px;
+    
+}
+/* Card de produto */
+.card-comidas{ 
+    min-width: 220px; /* permite uma largura mínima para cada um dos card */
+    border-radius: 20px;
+    background: whitesmoke;
+    
+}
+.imagem-comidas {
+    position: relative; /* posiciona a tag sobre a imagem */
+    height: 120px;
+}
+.imagem-comidas img {
+    height:100% ;
+    width: 100%;
+    object-fit:cover; /* A IMAGEM PREENCHE SEM DEFORMAR */
+}
+/* Tag promocional */
+.tag {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background: orange;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 4px 8px;
+}
+.info-comida {
+    padding: 8px;
+    
+}
+
+.info-comida h3 {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Descrição Divonica */
+.info-comida p {
+    padding: 4px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 50px; 
+}
+
+/* Área do preço */
+.preco-comida{
+    display: flex;
+    justify-content:space-between; /* mantém o preço e botão alinhados na mesma linha */
+    align-items: center;
+    margin-top:auto;
+}
+
+.preco-comida strong{
+    color: rgb(255, 81, 0);
+    font-size: 18px;
+}
+
+/* Botão de adicionar ao carrinho (nunca darei continuidade) */
+.preco-comida button {
+    width: 32px;
+    height: 32px;
+    border: 0px;
+    background-color: #8bc34a;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor:pointer; 
+}
+
+/* Barra de navegação */
+.barra-inferior {
+    background: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    max-width: 390px;
+}
+
+/* Botões da barra inferior */
+.botao-menu {
+    flex: 1; /* Vendi a alma mas descobri que todos os itens terão a mesma proporção */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight:lighter ;
+    color: gray;
+}
+
+.pedido-vazio{
+    text-align: center;
+    font-size: 60px;
+    color: #666;
+    margin-top: 30px;
+}
+/* Tela de pedidos vazia (continuará eternamente) */
+.pedido-vazio{
+    text-align: center;
+    font-size: 60px;
+    color: #666;
+    margin-top: 30px;
+}
+.pedido-vazio p{ font-size: 16px; 
+    margin-top: 10px; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-style: italic; }
+/* Caixa do perfil */
+.perfil-box {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.perfil-box p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.perfil-box i {
+    font-size: 35px;
+    padding: 20px;
+    background: rgb(221, 217, 217);
+    border-radius: 50%;
+    color: white;
+    
+}
+
+
+.perfil-box h2{
+    padding: 4px;
+    font-size: 20px;
+}
+
+.info-options {
+    background: whitesmoke;
+    padding: 16px;
+    border-radius: 25px;
+    margin: 12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Porque tem que usar tanto a cabeça pra um ícone ficar laranja ao mudar de aba??????*/
+.destaque-menu{
+    color:#ff7b00;
+}
