@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.cabecalho{
+    background-color: #0f0047;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.logo{
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.link{
+    margin: 0rem 1.4em;
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+
+}
+.body{
+    text-align: center;
+    background: #2e2bff;
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+}
+.banner{
+    background-color: #420eff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+
+}
+.linkbanner{
+    margin: 0rem 1.4em;
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+.pesquisa{
+    background-color: #8400ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+.pesquisainput{
+    display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex: 1;
+      min-width: 140px;
+}
+.destinolayout{
+    padding: 30px 10px;
+    display: flex;
+      flex-direction: column;
+      gap: 40px;
+      flex: 1;
+      
+}
+.destinocard{
+    background-color: #420eff;
+    text-align: center;
+    color: #fff;
+    padding: 30px 10px  ;
+    border-radius: 8px;
+    
+}
+.destinolink{
+
+    color: #420eff;
+    text-decoration: none;
+    text-align: right;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
