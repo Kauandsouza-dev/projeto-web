@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigago</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+<body>
+<header class="cabecalho">
+    <div class="cabecalho__wrap">
+        <button class="menu-toggle" type="button" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1 class="logo">
+            <span class="logo-t">ヒ</span><span class="logo-tri">ri</span><span class="logo-ga">ga</span><span class="logo-go">go</span>
+        </h1>
+    </div>
+</header>
+
+<nav class="menu-lateral" aria-hidden="true">
+    <div class="menu-conteudo">
+        <button class="menu-close" type="button" aria-label="Fechar menu">×</button>
+        <ul class="menu-lista">
+            <li><a href="paginas/configuracoes.html">Configurações</a></li>
+            <li><a href="paginas/suporte.html">Suporte</a></li>
+            <li><a href="paginas/sobre.html">Sobre nós</a></li>
+            <li><a href="paginas/historico.html">Histórico</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="pagina">
+    <div class="conteudo__pagina">
+        <h3 style="font-size: 1.5rem;">Economize até 50% na sua próxima estadia</h3>
+        <p style ="font-size: 1rem; font-weight: 500;">Comparamos preços de hotéis de mais de 100 sites</p>
+    </div>
+
+    <div class="botoes">
+    
+        <input type="text" placeholder="Digite sua cidade de destino">
+        <input type="text" id="daterange" placeholder="Check-in/Check-out">
+        <button class="botoes__botao__pesquisar">Pesquisar</    button>
+
+    </div>
+
+    <div class="opcoes">
+
+        <button class="opcao">
+            <img src="assets/beira_mar.jpeg" alt="Fortaleza">
+            <span>Fortaleza</span>
+        </button>
+        <button class="opcao">
+            <img src="assets/ponte_floripa.jpeg" alt="Florianópolis">
+            <span>Florianópolis</span>
+        </button>
+        <button class="opcao">
+            <img src="assets/museu.jpeg" alt="São Paulo">
+            <span>São Paulo</span>
+        </button>
+        <button class="opcao">
+            <img src="assets/pao_de_acucar.jpeg" alt="Rio de Janeiro">
+            <span>Rio de Janeiro</span>
+        </button>
+        <button class="opcao">
+            <img src="assets/salvador.jpeg" alt="Salvador">
+            <span>Salvador</span>
+        </button>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
